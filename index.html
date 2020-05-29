@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+	<title>Ломбард</title>
+</head>
+
+<body>
+	<nav class="navigation">
+		<div class="wrapper">
+			<div class="nav-about">
+				<div class="nav-about__email">
+					<span uk-icon="mail"></span>
+					Наша электронная почта: <a href="emailto:1masatbek@mail.com">1masatbek@mail.comm</a>
+				</div>
+
+				<div class="nav-about__container">
+					<div class="nav-about__links">
+						<a href="https://www.facebook.com/" target="_blank" uk-icon="facebook"></a>
+						<a href="http://twitter.com/" target="_blank" uk-icon="twitter"></a>
+						<a href="https://www.instagram.com/" target="_blank" uk-icon="instagram"></a>
+						<a href="https://www.whatsapp.com/" target="_blank" uk-icon="whatsapp"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="nav-main responsive-main-menu">
+				<div class="nav-main__logo">
+					<img src="./img/logo.png" alt="Logo">
+				</div>
+
+				<div class="responsive-menu">
+					<div class="responsive-menu-icon">
+						<span uk-icon="icon: menu; ratio: 1.8"></span>
+					</div>
+					<div class="responsive-main-dropdown" uk-dropdown="mode: click">
+						<ul class="responsive-main__menu">
+							<li class="responsive-main-menu__item">
+								<a href="/index.html">Главная</a>
+							</li>
+
+							<li class="responsive-main-menu__item">
+								<a href="/products.html">Все товары</a>
+							</li>
+
+							<li class="responsive-main-menu__item">
+								<a href="/buyback.html">Мои товары</a>
+							</li>
+
+							<li class="responsive-main-menu__item">
+								<a href="tel:87079266513">8-707-926-6513</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="nav-main__container responsive-nav">
+					<ul class="nav-main__menu">
+						<li class="nav-main-menu__item">
+							<a href="/index.html">Главная</a>
+						</li>
+
+						<li class="nav-main-menu__item">
+							<a href="/products.html">Все товары</a>
+						</li>
+
+						<li class="nav-main-menu__item nav-main-menu__item-active">
+							<a href="/buyback.html">Мои товары</a>
+						</li>
+					</ul>
+
+					<div class="nav-main__phone">
+						<p uk-icon="icon: receiver; ratio: 1.4"></span>
+							<p>8-707-926-6513</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header class="main-header">
+		<div class="wrapper">
+			<div class="main-header__info">
+				<p>RH-Lombard</p>
+				<p>Выкупайте, продливайте, покупайте и все это онлайн в ломбарде - Real Homes Lombard</p>
+			</div>
+
+			<div class="main-header__title">
+				<p uk-icon="icon: search; ratio: 1.4"></p>
+				<p>Все Что Угодно</p>
+			</div>
+		</div>
+	</header>
+
+	<section class="info-section">
+		<div class="wrapper">
+			<h2 class="info-section__title">Мы предлагаем лучшие товары</h2>
+			<p class="info-section__desc">
+				Посмотрите весь список товаров, выберите то что вам приглянулось
+			</p>
+
+			<div class="info-section-list">
+				<div class="info-section-list__item">
+					<p class="info-section-list-item__title">Iphone 11</p>
+
+					<div class="info-section-list-item__container">
+						<div class="info-section-list-item-container__img">
+							<img src="./img/iphonePro.png" alt="Product">
+						</div>
+
+						<div class="info-section-list-item-container__info">
+							<p class="info-section-list-item-container-info__price">
+								240 000 ₸
+							</p>
+
+							<p class="info-section-list-item-container-info__desc">
+								Новая система двух камер не оставит никого из ваших друзей за кадром.
+							</p>
+
+							<a href="./product-detail.html" class="info-section-list-item-container-info__more">
+								Подробнее <span uk-icon="triangle-right"></span>
+							</a>
+						</div>
+					</div>
+
+					<div class="info-section-list-item__footer">
+						<p>На продаже: 2 месяца</p>
+					</div>
+				</div>
+
+				<div class="info-section-list__item">
+					<p class="info-section-list-item__title">Samsung Galaxy S20 Ultra</p>
+
+					<div class="info-section-list-item__container">
+						<div class="info-section-list-item-container__img">
+							<img src="./img/samsung.png" alt="Product">
+						</div>
+
+						<div class="info-section-list-item-container__info">
+							<p class="info-section-list-item-container-info__price">
+								340 000 ₸
+							</p>
+
+							<p class="info-section-list-item-container-info__desc">
+								Cнимайте в революционном разрешении 8K и получайте сверхчеткие фотографии...
+							</p>
+
+							<a href="./samsung.html" class="info-section-list-item-container-info__more">
+								Подробнее <span uk-icon="triangle-right"></span>
+							</a>
+						</div>
+					</div>
+
+					<div class="info-section-list-item__footer">
+						<p>На продаже: 2 недели</p>
+					</div>
+				</div>
+
+				<div class="info-section-list__item">
+					<p class="info-section-list-item__title">Huawei P30 Pro</p>
+
+					<div class="info-section-list-item__container">
+						<div class="info-section-list-item-container__img">
+							<img src="./img/huawei.png" alt="Product">
+						</div>
+
+						<div class="info-section-list-item-container__info">
+							<p class="info-section-list-item-container-info__price">
+								168 000 ₸
+							</p>
+
+							<p class="info-section-list-item-container-info__desc">
+								Посмотрите на мир под другим углом, и он станет ярче, просторнее и ближе.
+							</p>
+
+							<a href="./huawei.html" class="info-section-list-item-container-info__more">
+								Подробнее <span uk-icon="triangle-right"></span>
+							</a>
+						</div>
+					</div>
+
+					<div class="info-section-list-item__footer">
+						<p>На продаже: 2 недели</p>
+					</div>
+				</div>
+			</div>
+
+			<a href="./products.html" class="info-section-button">
+				Смотреть весь список
+			</a>
+		</div>
+	</section>
+</body>
+
+</html>

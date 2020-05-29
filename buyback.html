@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="css/uikit.min.css" />
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+	<title>Ломбард</title>
+</head>
+<body>
+	<nav class="navigation">
+		<div class="wrapper">
+			<div class="nav-about">
+				<div class="nav-about__email">
+					<span uk-icon="mail"></span>
+					Наша электронная почта: <a href="emailto:1masatbek@mail.com">1masatbek@mail.comm</a>
+				</div>
+
+				<div class="nav-about__container">
+					<div class="nav-about__links">
+						<a href="https://www.facebook.com/" target="_blank" uk-icon="facebook"></a>
+						<a href="http://twitter.com/" target="_blank" uk-icon="twitter"></a>
+						<a href="https://www.instagram.com/" target="_blank" uk-icon="instagram"></a>
+						<a href="https://www.whatsapp.com/" target="_blank" uk-icon="whatsapp"></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="nav-main responsive-main-menu">
+				<div class="nav-main__logo">
+					<img src="./img/logo.png" alt="Logo">
+				</div>
+
+				<div class="responsive-menu">
+					<div class="responsive-menu-icon">
+						<span uk-icon="icon: menu; ratio: 1.8"></span>
+					</div>
+					<div class="responsive-main-dropdown" uk-dropdown="mode: click">
+						<ul class="responsive-main__menu">
+							<li class="responsive-main-menu__item">
+								<a href="/index.html">Главная</a>
+							</li>
+		
+							<li class="responsive-main-menu__item">
+								<a href="/products.html">Все товары</a>
+							</li>
+		
+							<li class="responsive-main-menu__item">
+								<a href="/buyback.html">Мои товары</a>
+							</li>
+
+							<li class="responsive-main-menu__item">
+								<a href="tel:87079266513">8-707-926-6513</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="nav-main__container responsive-nav">
+					<ul class="nav-main__menu">
+						<li class="nav-main-menu__item">
+							<a href="/index.html">Главная</a>
+						</li>
+	
+						<li class="nav-main-menu__item">
+							<a href="/products.html">Все товары</a>
+						</li>
+	
+						<li class="nav-main-menu__item nav-main-menu__item-active">
+							<a href="/buyback.html">Мои товары</a>
+						</li>
+					</ul>
+	
+					<div class="nav-main__phone">
+						<p uk-icon="icon: receiver; ratio: 1.4"></span>
+						<p>8-707-926-6513</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header class="main-header product-header">
+		<div class="wrapper">
+			<div class="main-header__title none">
+				<p uk-icon="icon: search; ratio: 1.4"></p>
+				<p>Все Что Угодно</p>
+			</div>
+		</div>
+	</header>
+
+	<section class="info-section">
+		<div class="wrapper">
+         <h2 class="info-section__title">Мои товары</h2>
+         <p class="info-section__desc">
+            Введите свой номер чека. Вы можете выбрать какой товар выкупить или же выкупить все
+         </p>
+
+         <div class="buyback">
+				<input class="uk-input" type="text" placeholder="Введите чек">
+				<div class="buyback-flex">
+					<button class="info-section-categories__button info-section-categories__button-f">Поиск</button>
+					<button class="info-section-categories__button" uk-toggle="target: #buyback">Выкупить</button>
+					<button class="info-section-categories__button" uk-toggle="target: #extend">Продлить</button>
+				</div>
+
+				<div id="buyback" uk-modal>
+					<div class="uk-modal-dialog uk-modal-body">
+						<h2 class="uk-modal-title">Выкуп товара</h2>
+						
+						<div class="buyback-modal">
+					 		<div class="buyback-modal__field">
+								<p>Номер карты</p>
+								<input class="uk-input uk-form-small" type="text" placeholder="12345678912">
+							</div>
+
+							<div class="buyback-modal__field">
+								<div class="buyback-modal__field-date">
+									<p>Срок карты</p>
+									<input class="uk-input uk-form-small" type="text" placeholder="06">
+									<input class="uk-input uk-form-small" type="text" placeholder="21">
+								</div>
+
+								<div>
+									<p>CVV код</p>
+									<input class="uk-input uk-form-small" type="text" placeholder="cvs">
+								</div>
+							</div>
+						</div>
+
+						<p class="uk-text-right">
+							<button class="uk-button uk-button-default uk-modal-close" type="button">Отмена</button>
+							<button class="uk-button uk-button-primary" type="button">Подтвердить</button>
+						</p>
+					</div>
+				</div>
+
+				<div id="extend" uk-modal>
+					<div class="uk-modal-dialog uk-modal-body">
+						<h2 class="uk-modal-title">Продливание отсрочки</h2>
+					
+						<div class="buyback-modal">
+							<div class="buyback-modal__field">
+							  <p>Номер карты</p>
+							  <input class="uk-input uk-form-small" type="text" placeholder="12345678912">
+						  </div>
+
+						  <div class="buyback-modal__field">
+							  <div class="buyback-modal__field-date">
+								  <p>Срок карты</p>
+								  <input class="uk-input uk-form-small" type="text" placeholder="06">
+								  <input class="uk-input uk-form-small" type="text" placeholder="21">
+							  </div>
+
+							  <div>
+								  <p>CVV код</p>
+								  <input class="uk-input uk-form-small" type="text" placeholder="cvs">
+							  </div>
+						  </div>
+					  </div>
+
+						<p class="uk-text-right">
+							<button class="uk-button uk-button-default uk-modal-close" type="button">Отмена</button>
+							<button class="uk-button uk-button-primary" type="button">Подтвердить</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="info-section-list info-section-list-product buyback-list">
+				<div class="info-section-list__item">
+					<div class="info-section-list-item__title">
+						<p>Iphone 11</p>
+						<input class="uk-checkbox" type="checkbox">
+					</div>
+
+					<div class="info-section-list-item__container">
+						<div class="info-section-list-item-container__img">
+							<img src="./img/iphonePro.png" alt="Product">
+						</div>
+
+						<div class="info-section-list-item-container__info">
+							<p class="info-section-list-item-container-info__price">
+								Цена выкупа - 42000 ₸
+							</p>
+							<p class="info-section-list-item-container-info__price">
+								Цена продливания - 3400 ₸
+							</p>
+							
+							<p class="info-section-list-item-container-info__desc">
+								Новая система двух камер не оставит никого из ваших друзей за кадром. 
+							</p>
+						</div>
+					</div>
+
+					<div class="info-section-list-item__footer">
+						<p>Выкупить до: 12.02.2000</p>
+					</div>
+            </div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
